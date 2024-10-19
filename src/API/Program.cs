@@ -54,6 +54,15 @@ app.UseSwaggerUI(options =>
 app.Run();
 
 // Define the API response for our API endpoint.
+
+/// <summary>
+/// Represents the current date and time.
+/// </summary>
+/// <param name="Timestamp">The timestamp for the response for which the times are generated.</param>
+/// <param name="Rfc1123">The current UTC date and time in RFC1123 format.</param>
+/// <param name="UnixSeconds">The number of seconds since the UNIX epoch.</param>
+/// <param name="UniversalSortable">The current UTC date and time in universal sortable format.</param>
+/// <param name="UniversalFull">The current UTC date and time in universal full format.</param>
 public record CurrentTime(
     DateTimeOffset Timestamp,
     string Rfc1123,
