@@ -1,0 +1,4 @@
+@ApiHostAddress = http://localhost:5142
+
+GET {{ApiHostAddress}}/api/time
+Accept: application/json

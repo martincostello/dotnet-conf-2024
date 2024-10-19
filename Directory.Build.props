@@ -1,0 +1,12 @@
+<Project>
+  <PropertyGroup>
+    <Authors>martin_costello</Authors>
+    <Company>https://github.com/martincostello/dotnet-conf-2024</Company>
+    <Copyright>Martin Costello (c) 2024</Copyright>
+    <EnableNETAnalyzers>true</EnableNETAnalyzers>
+    <EnforceCodeStyleInBuild>true</EnforceCodeStyleInBuild>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <UseArtifactsOutput>true</UseArtifactsOutput>
+  </PropertyGroup>
+</Project>
