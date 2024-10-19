@@ -65,7 +65,8 @@ api.MapGet("time", (TimeProvider timeProvider) =>
         utcNow.UtcDateTime.ToString("U"));
 
     return TypedResults.Ok(time);
-});
+})
+.ProducesOpenApiResponse(StatusCodes.Status200OK, "The current date and time.");
 
 // Map endpoint to return the OpenAPI document for our API.
 app.MapOpenApi();
