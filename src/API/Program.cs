@@ -53,7 +53,7 @@ var app = builder.Build();
 var api = app.MapGroup("api");
 
 // Define our Minimal API endpoint that returns the current date and time in various formats.
-api.MapGet("time", [OpenApiExample<CurrentTime>] (TimeProvider timeProvider) =>
+api.MapGet("time", (TimeProvider timeProvider) =>
 {
     var utcNow = timeProvider.GetUtcNow();
 
@@ -90,6 +90,7 @@ app.Run();
 /// <param name="UnixSeconds">The number of seconds since the UNIX epoch.</param>
 /// <param name="UniversalSortable">The current UTC date and time in universal sortable format.</param>
 /// <param name="UniversalFull">The current UTC date and time in universal full format.</param>
+[OpenApiExample<CurrentTime>]
 public record CurrentTime(
     DateTimeOffset Timestamp,
     string Rfc1123,
