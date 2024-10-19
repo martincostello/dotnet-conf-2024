@@ -43,6 +43,13 @@ api.MapGet("time", (TimeProvider timeProvider) =>
 // Map endpoint to return the OpenAPI document for our API.
 app.MapOpenApi();
 
+// Add SwaggerUI using Swashbuckle.AspNetCore to view our OpenAPI document at the root of the application.
+app.UseSwaggerUI(options =>
+{
+    options.RoutePrefix = "";
+    options.SwaggerEndpoint("openapi/v1.json", "Time API");
+});
+
 // Run the API!
 app.Run();
 
