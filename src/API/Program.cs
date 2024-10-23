@@ -13,14 +13,14 @@ builder.Services.AddOpenApi();
 // Extend the OpenAPI document with additional information.
 builder.Services.AddOpenApiExtensions((options) =>
 {
-    // Always return the server URLs in the OpenAPI document
+    // Always return the server URLs in the OpenAPI document.
     // Only enable this option in production if you are sure
     // you wish to explicitly expose your server URLs.
     options.AddServerUrls = true;
 
     // Set a default URL to use for generation of the OpenAPI document using
     // https://www.nuget.org/packages/Microsoft.Extensions.ApiDescription.Server.
-    options.DefaultServerUrl = "http://localhost:5142";
+    options.DefaultServerUrl = "https://api.my-company.local";
 
     // Add examples for OpenAPI operations and components
     options.AddExamples = true;
