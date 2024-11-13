@@ -9,7 +9,7 @@
     <PackageReference Include="MartinCostello.OpenApi.Extensions" Version="1.0.0" />
     <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="9.0.0" />
     <PackageReference Include="Microsoft.Extensions.ApiDescription.Server" Version="9.0.0" PrivateAssets="all" />
-    <PackageReference Include="Swashbuckle.AspNetCore.SwaggerUI" Version="6.9.0" />
+    <PackageReference Include="Swashbuckle.AspNetCore.SwaggerUI" Version="7.0.0" />
   </ItemGroup>
   <PropertyGroup Label="Enable generation of OpenAPI document file">
     <OpenApiDocumentsDirectory>$([System.IO.Path]::Combine($(ArtifactsPath), 'openapi'))</OpenApiDocumentsDirectory>
